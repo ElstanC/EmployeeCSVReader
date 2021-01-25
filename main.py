@@ -15,8 +15,6 @@ class Person:
 
 
 with open('MOCK_DATA.csv', newline='') as csvfile:
-    
-    
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
     next(spamreader)
     for row in spamreader:
