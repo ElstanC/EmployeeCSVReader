@@ -36,7 +36,7 @@ def printPerson(Person):
     print(Person.firstName + " " + str(Person.age) + ' ' +
           str(Person.email) + ' ' + str(Person.ipaddr))
 
-    
+
 def graph():
     names = ['Female', 'Male']
     femaleCount = 0
