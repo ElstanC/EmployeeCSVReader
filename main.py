@@ -13,8 +13,10 @@ class Person:
         self.gender = gender
         self.ipaddr = ipaddr
 
-        
+
 with open('MOCK_DATA.csv', newline='') as csvfile:
+    
+    
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
     next(spamreader)
     for row in spamreader:
@@ -34,7 +36,7 @@ def listEmployees(attr):
 def printPerson(Person):
     print(Person.firstName + " " + str(Person.age) + ' ' + str(Person.email) + ' ' + str(Person.ipaddr))
 
-    
+
 def graph():
     names = ['Female', 'Male']
     femaleCount = 0
